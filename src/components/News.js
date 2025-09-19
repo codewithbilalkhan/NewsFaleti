@@ -50,7 +50,7 @@ const News = ({ category, pageSize, apikey }) => {
 
   return (
     <div className="container my-3">
-      <h2 className="text-center">
+      <h2 className="text-center"  style={{ marginTop: "90px" }}>
         NewsFaleti - {capitalizeFirstLetter(category)} Top Headlines
       </h2>
 
