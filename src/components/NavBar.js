@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 
-export class NavBar extends Component {
-  render() {
+const NavBar = ()=> {
+  
     return (
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark text-white">
         <div className="container-fluid">
@@ -22,15 +22,13 @@ export class NavBar extends Component {
               <li className="nav-item"><Link className="nav-link" to="/health">health</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/science">Science</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/sports">Sports</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="/technology">Technology</Link></li>
-             
+              <li className="nav-item"><Link className="nav-link" to="/technology">Technology</Link></li> 
             </ul>
-           
           </div>
         </div>
       </nav>
     );
-  }
+
 }
 
 export default NavBar;
