@@ -26,7 +26,7 @@ const News = ({ category, pageSize, apikey }) => {
   useEffect(() => {
     fetchNews(page);
    
-  }, [category]); 
+  }, [category, page]); 
 
   const handlePageChange = (newPage) => {
     setPage(newPage);
